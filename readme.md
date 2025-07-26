@@ -7,6 +7,7 @@ xdg-user-dirs-gtk-update
 # Git 설치
 ```bash
 sudo apt-get install git
+sudo apt-get install git-lfs
 ```
 
 # 이 리포스터지 가져오기
