@@ -31,7 +31,7 @@ sudo apt install windsurf
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
-# Discord 설치
+# Discord 설치(과외용)
 ```bash
 sudo dpkg -i discord-0.0.102.deb
 ```
@@ -42,10 +42,10 @@ sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
 ```
 
 # 파이썬 가상환경 없이도 라이브러리 설치할수 있게하기
-파이썬은 리눅스에서는 가상환경을 설치해야 한다 그방법없이 해보자 
+리눅스에서는 파이썬 라이브러리를 설치할때 가상환경을 설치해야 한다 계속 가상환경을 만들고 라이브러리를 설치하는건 귀찮으니 아래 명령어를 쳐서 해결해보자
 ```bash
-python3 -m pip config set global.break-system-packages true
 sudo apt-get install python3-pip
+python3 -m pip config set global.break-system-packages true
 ```
 
 # 파이썬 가상환경 쓸수 있게 하기
