@@ -32,6 +32,11 @@ sudo apt install windsurf
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
+# Vim 설치
+```bash
+sudo apt-get install vim
+```
+
 # Discord 설치(과외용)
 ```bash
 sudo dpkg -i discord-0.0.102.deb
