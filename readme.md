@@ -37,6 +37,11 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install vim
 ```
 
+# 클립보드 설치
+```bash
+sudo apt install copyq
+```
+
 # NeoFetch 설치
 ```bash
 sudo apt-get install neofetch
