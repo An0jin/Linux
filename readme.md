@@ -37,6 +37,12 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install vim
 ```
 
+# NeoFetch 설치
+```bash
+sudo apt-get install neofetch
+echo "neofetch" >> ~/.bashrc
+```
+
 # Discord 설치(과외용)
 ```bash
 sudo dpkg -i discord-0.0.102.deb
@@ -45,6 +51,13 @@ sudo dpkg -i discord-0.0.102.deb
 # GitHub Desktop 설치
 ```bash
 sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
+```
+
+# 한글 설정
+```bash
+sudo apt update
+sudo apt install -y language-pack-ko fonts-nanum-* fontconfig
+sudo fc-cache -f -v
 ```
 
 # 파이썬 가상환경 없이도 라이브러리 설치할수 있게하기
