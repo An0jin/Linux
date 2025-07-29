@@ -39,7 +39,7 @@ sudo apt-get install vim
 
 # 클립보드 설치
 ```bash
-sudo apt install copyq
+sudo apt install gnome-shell-extension-gpaste
 ```
 
 # NeoFetch 설치
