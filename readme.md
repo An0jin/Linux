@@ -48,7 +48,7 @@ sudo apt-get install neofetch
 echo "neofetch" >> ~/.bashrc
 ```
 
-# Discord 설치(과외용)
+# Discord 설치(비대면 과외할때 필요)
 ```bash
 sudo dpkg -i discord-0.0.102.deb
 ```
