@@ -95,3 +95,15 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo service docker restart
 ```
+
+# Docker Desktop 설치
+```bash
+sudo dpkg -i docker-desktop-amd64.deb
+```
+
+# Docker 로그인이 안될 때
+```bash
+gpg --full-generate-key
+gpg --list-secret-keys --keyid-format long
+pass init $your_gpg_id
+```
