@@ -108,6 +108,12 @@ gpg --list-secret-keys --keyid-format long
 pass init $your_gpg_id
 ```
 
+# ChatGPT Desktop 설치
+```bash
+sudo snap install chatgpt-desktop-client
+
+```
+
 # Claude Desktop 설치
 ```bash
 sudo dpkg -i claude-desktop_0.12.55_amd64.deb
