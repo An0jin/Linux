@@ -107,3 +107,8 @@ gpg --full-generate-key
 gpg --list-secret-keys --keyid-format long
 pass init $your_gpg_id
 ```
+
+# Claude Desktop 설치
+```bash
+sudo dpkg -i claude-desktop_0.12.55_amd64.deb
+```
