@@ -29,7 +29,7 @@ sudo apt install windsurf
 
 # Chrome 설치
 ```bash
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt install google-chrome-stable_current_amd64.deb
 ```
 
 # Vim 설치
@@ -50,12 +50,12 @@ echo "neofetch" >> ~/.bashrc
 
 # Discord 설치(비대면 과외할때 필요)
 ```bash
-sudo dpkg -i discord-0.0.102.deb
+sudo apt install discord-0.0.102.deb
 ```
 
 # GitHub Desktop 설치
 ```bash
-sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
+sudo apt install GitHubDesktop-linux-amd64-3.4.13-linux1.deb
 ```
 
 # 한글 설정
@@ -98,7 +98,7 @@ sudo service docker restart
 
 # Docker Desktop 설치
 ```bash
-sudo dpkg -i docker-desktop-amd64.deb
+sudo apt install docker-desktop-amd64.deb
 ```
 
 # Docker 로그인이 안될 때
