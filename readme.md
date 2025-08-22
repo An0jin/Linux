@@ -80,6 +80,12 @@ python3 -m venv myenv
 source myenv/bin/activate
 ```
 
+# Java 설치
+
+```bash
+sudo apt install openjdk-21-jdk
+```
+
 # Node.js 설치
 
 ```bash
