@@ -12,11 +12,6 @@ sudo apt-get install git
 sudo apt-get install git-lfs
 ```
 
-# 이 리포스터지 가져오기
-
-```bash
-git clone https://github.com/an0jin/Linux.git
-```
 # WindSurf 설치
 
 ```bash
@@ -30,16 +25,16 @@ sudo apt update
 sudo apt install windsurf
 ```
 
-# Chrome 설치
-
-```bash
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-```
-
 # Vim 설치
 
 ```bash
 sudo apt-get install vim
+```
+
+# 이모지 설치
+
+```bash
+sudo snap install emote
 ```
 
 # 클립보드 설치
@@ -53,18 +48,6 @@ sudo apt install gnome-shell-extension-gpaste
 ```bash
 sudo apt-get install neofetch
 echo "neofetch" >> ~/.bashrc
-```
-
-# Discord 설치(비대면 과외할때 필요)
-
-```bash
-sudo dpkg -i  discord-0.0.102.deb
-```
-
-# GitHub Desktop 설치
-
-```bash
-sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
 ```
 
 # 한글 설정
@@ -128,18 +111,44 @@ sudo usermod -aG docker $USER
 sudo service docker restart
 ```
 
-# Docker Desktop 설치
-
-```bash
-sudo dpkg -i docker-desktop-amd64.deb
-```
-
 # Docker 로그인이 안될 때
 
 ```bash
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format long
 pass init $your_gpg_id
+```
+
+# 이 리포스터지 가져오기
+
+```bash
+git clone https://github.com/an0jin/Linux.git
+```
+
+# Chrome 설치
+
+```bash
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+
+# Discord 설치(비대면 과외할때 필요)
+
+```bash
+sudo dpkg -i  discord-0.0.102.deb
+```
+
+# GitHub Desktop 설치
+
+```bash
+sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
+```
+
+
+# Docker Desktop 설치
+
+```bash
+sudo apt --fix-broken install docker-desktop-amd64.deb
 ```
 
 # ChatGPT Desktop 설치
