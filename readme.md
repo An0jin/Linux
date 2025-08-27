@@ -150,13 +150,6 @@ sudo dpkg -i  discord-0.0.102.deb
 sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
 ```
 
-
-# Docker Desktop 설치
-
-```bash
-sudo apt --fix-broken install docker-desktop-amd64.deb
-```
-
 # ChatGPT Desktop 설치
 
 ```bash
