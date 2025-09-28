@@ -176,6 +176,7 @@ echo '/swapfile2 none swap sw 0 0' | sudo tee -a /etc/fstab
 
 ## docker 설치
 ```bash
+sudo dnf update -y	
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
