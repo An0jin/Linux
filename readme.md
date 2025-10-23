@@ -1,3 +1,15 @@
+# 주의점
+이 리포스터지는 oracle linux에 과한 설명만 되어있으므로 ubuntu나 다른 리눅스를 사용할때는 안될수도 있습니다.
+
+# wifi 인식이 안 될떄 대처법
+```bash
+sudo dnf install iwl7260-firmware linux-firmware
+sudo modprobe -r iwlwifi
+sudo modprobe iwlwifi
+nmcli device status
+```
+
+
 # 한글 폴더를 영어로 바꾸기
 
 ```bash
@@ -124,15 +136,6 @@ tar -zxvf  desktop-release-3.4.13-linux1.tar.gz
 ```bash
 sudo dnf install GitHubDesktop-linux-x86_64-3.4.12-linux1.rpm
 ```
-
-# wifi 인식이 안 될떄 대처법
-```bash
-sudo dnf install iwl7260-firmware linux-firmware
-sudo modprobe -r iwlwifi
-sudo modprobe iwlwifi
-nmcli device status
-```
-
 # 용량부족 해결볍(oracle cloud 전용)
 
 ```bash
