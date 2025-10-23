@@ -125,7 +125,15 @@ tar -zxvf  desktop-release-3.4.13-linux1.tar.gz
 sudo dnf install GitHubDesktop-linux-x86_64-3.4.12-linux1.rpm
 ```
 
-# 용향부족 해결볍(oracle cloud 전용)
+# wifi 인식이 안 될떄 대처법
+```bash
+sudo dnf install iwl7260-firmware linux-firmware
+sudo modprobe -r iwlwifi
+sudo modprobe iwlwifi
+nmcli device status
+```
+
+# 용량부족 해결볍(oracle cloud 전용)
 
 ```bash
 sudo fallocate -l 2G /swapfile2  # 2GB 스왑 파일 생성
