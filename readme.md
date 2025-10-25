@@ -136,6 +136,21 @@ tar -zxvf  desktop-release-3.4.13-linux1.tar.gz
 ```bash
 sudo dnf install GitHubDesktop-linux-x86_64-3.4.12-linux1.rpm
 ```
+
+# CLI로 변경하기
+
+```bash
+sudo systemctl set-default multi-user.target
+sudo reboot
+```
+
+# GUI로 변경하기
+
+```bash
+sudo systemctl set-default graphical.target
+sudo reboot
+```
+
 # 용량부족 해결볍(oracle cloud 전용)
 
 ```bash
