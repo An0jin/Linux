@@ -147,5 +147,10 @@ echo '/swapfile2 none swap sw 0 0' | sudo tee -a /etc/fstab
 sudo sysctl vm.swappiness=10
 ```
 
-
-
+# 포트 문제가 생긴다면(oracle cloud 전용)
+```bash
+sudo firewall-cmd --zone=public --add-port=8000/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=5432/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=22/tcp --permanent
+sudo firewall-cmd --reload
+```
