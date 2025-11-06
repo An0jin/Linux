@@ -7,6 +7,20 @@
 export LANG=C
 xdg-user-dirs-gtk-update
 ```
+
+## CLI로 변경하기
+
+```bash
+sudo systemctl set-default multi-user.target
+sudo reboot
+```
+
+## GUI로 변경하기
+
+```bash
+sudo systemctl set-default graphical.target
+sudo reboot
+```
 # ubuntu
 ## Git 설치
 
@@ -271,20 +285,6 @@ tar -zxvf  desktop-release-3.4.13-linux1.tar.gz
 
 ```bash
 sudo dnf install GitHubDesktop-linux-x86_64-3.4.12-linux1.rpm
-```
-
-## CLI로 변경하기
-
-```bash
-sudo systemctl set-default multi-user.target
-sudo reboot
-```
-
-## GUI로 변경하기
-
-```bash
-sudo systemctl set-default graphical.target
-sudo reboot
 ```
 
 # oracle cloud에서 사용할떄
