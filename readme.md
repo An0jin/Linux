@@ -167,6 +167,13 @@ sudo dpkg -i  discord-0.0.102.deb
 sudo dpkg -i GitHubDesktop-linux-amd64-3.4.13-linux1.deb
 ```
 
+## ssh 설치
+
+```bash
+sudo apt update
+sudo apt install openssh-server
+
+```
 
 
 # Oracle Linux
