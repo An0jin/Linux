@@ -28,32 +28,12 @@ sudo reboot
 sudo apt-get install git
 sudo apt-get install git-lfs
 ```
-
-## Antigravity IDE를 실행프로그램으로 만들어 보자
-
-```bash
-sudo tar -zxvf AntigravityIDE.tar.gz -C /opt/
-sudo vim "/usr/share/applications/Antigravity IDE.desktop"
-```
-### 파일 내용작성
-
-```bash
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Antigravity IDE
-Comment=Antigravity IDE 개발 도구
-Exec=/opt/AntigravityIDE/antigravity-ide
-Icon=/opt/AntigravityIDE/resources/app/resources/linux/code.png
-Terminal=false
-Categories=Development;IDE;
-```
-
 ## Vim 설치
 
 ```bash
 sudo apt-get install vim
 ```
+
 
 ## 이모지 설치
 
@@ -91,13 +71,13 @@ sudo apt-get install python3-pip
 python3 -m pip config set global.break-system-packages true
 ```
 
-## 파이썬 가상환경 쓸수 있게 하기
+### 파이썬 가상환경 쓸수 있게 하기
 
 ```bash
 sudo apt-get install python3-venv
 ```
 
-## 가상환경 실행
+### 가상환경 실행
 
 ```bash
 python3 -m venv myenv
@@ -133,7 +113,7 @@ npm -v ## 10.9.3가 출력되어야 합니다.
 sudo wget -qO- http://get.docker.com/ | sh
 ```
 
-## Docker 할때 sudo 없이 사용하기
+### Docker 할때 sudo 없이 사용하기
 
 ```bash
 sudo groupadd docker
@@ -141,7 +121,7 @@ sudo usermod -aG docker $USER
 sudo service docker restart
 ```
 
-## Docker 로그인이 안될 때
+### Docker 로그인이 안될 때
 
 ```bash
 gpg --full-generate-key
@@ -168,6 +148,27 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo dpkg -i  discord-0.0.102.deb
 ```
 
+
+## Antigravity IDE를 실행프로그램으로 만들어 보자
+
+```bash
+sudo tar -zxvf AntigravityIDE.tar.gz -C /opt/
+sudo vim "/usr/share/applications/Antigravity IDE.desktop"
+```
+### 파일 내용작성
+
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Antigravity IDE
+Comment=Antigravity IDE 개발 도구
+Exec=/opt/AntigravityIDE/antigravity-ide
+Icon=/opt/AntigravityIDE/resources/app/resources/linux/code.png
+Terminal=false
+Categories=Development;IDE;
+```
+
 ## GitHub Desktop 설치
 
 ```bash
@@ -188,7 +189,7 @@ sudo apt install openssh-server
 
 # Oracle Linux
 
-## docker 설치
+## Docker 설치
 ```bash
 sudo dnf update -y	
 sudo dnf install -y dnf-utils
@@ -196,7 +197,7 @@ sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-## Docker 할때 sudo 없이 사용하기
+### Docker 할때 sudo 없이 사용하기
 
 ```bash
 sudo groupadd docker
