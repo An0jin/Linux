@@ -1,5 +1,4 @@
-
-# 공통(Ubuntu Desktop or oracle linux)
+# Xubuntu
 
 ## 한글 폴더를 영어로 바꾸기
 
@@ -21,7 +20,6 @@ sudo reboot
 sudo systemctl set-default graphical.target
 sudo reboot
 ```
-# Xubuntu
 
 ## Git 설치
 
@@ -29,6 +27,7 @@ sudo reboot
 sudo apt-get install git
 sudo apt-get install git-lfs
 ```
+
 ## Vim 설치
 
 ```bash
@@ -141,13 +140,11 @@ git clone https://github.com/an0jin/Linux.git
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
-
 ## Discord 설치(비대면 과외할때 필요)
 
 ```bash
 sudo dpkg -i  discord-0.0.102.deb
 ```
-
 
 ## Antigravity IDE를 실행프로그램으로 만들어 보자
 
@@ -155,6 +152,7 @@ sudo dpkg -i  discord-0.0.102.deb
 sudo tar -zxvf AntigravityIDE.tar.gz -C /opt/
 sudo vim "/usr/share/applications/Antigravity IDE.desktop"
 ```
+
 ### 파일 내용작성
 
 ```bash
@@ -168,12 +166,14 @@ Icon=/opt/AntigravityIDE/resources/app/resources/linux/code.png
 Terminal=false
 Categories=Development;IDE;
 ```
+
 ## Antigravity 2.0을 실행프로그램으로 만들어 보자
 
 ```bash
 sudo tar -zxvf Antigravity.tar.gz -C /opt/
 sudo vim "/usr/share/applications/Antigravity.desktop"
 ```
+
 ### 파일 내용작성
 
 ```bash
@@ -189,7 +189,9 @@ Categories=Development;IDE;
 ```
 
 ## GitHub Desktop 설치
+
 리눅스 계열은 Github Desktop을 지원을 안하기 때문에 [해당 리포스터지](https://github.com/desktop-plus/desktop-plus)를 이용하면 된다
+
 ```bash
 sudo curl https://gpg.desktop-plus.org/public.key | sudo gpg --dearmor -o /usr/share/keyrings/desktop-plus.gpg
 echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/desktop-plus.gpg] https://apt.desktop-plus.org/ stable main" | sudo tee /etc/apt/sources.list.d/desktop-plus.list
@@ -197,20 +199,28 @@ sudo apt update
 sudo apt install desktop-plus
 ```
 
-## ssh 설치
+# Oracle Linux(OCI)
+
+## 해당 클라우드에 접속하기
 
 ```bash
-sudo apt update
-sudo apt install openssh-server
-
+chmod 400 [개인키]
+ssh -i [개인키] opc@[ip]
 ```
 
+## Docker 설치
 
-# Oracle Linux
+```bash
+sudo dnf update -y
+sudo dnf install -y dnf-utils
+sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
 ## Docker 설치
+
 ```bash
-sudo dnf update -y	
+sudo dnf update -y
 sudo dnf install -y dnf-utils
 sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -236,6 +246,7 @@ sudo sysctl vm.swappiness=10
 ```
 
 ## 포트 문제가 생긴다면
+
 ```bash
 sudo firewall-cmd --zone=public --add-port=8000/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=5432/tcp --permanent
