@@ -168,6 +168,25 @@ Icon=/opt/AntigravityIDE/resources/app/resources/linux/code.png
 Terminal=false
 Categories=Development;IDE;
 ```
+## Antigravity 2.0을 실행프로그램으로 만들어 보자
+
+```bash
+sudo tar -zxvf Antigravity.tar.gz -C /opt/
+sudo vim "/usr/share/applications/Antigravity.desktop"
+```
+### 파일 내용작성
+
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Antigravity 2.0
+Comment=Antigravity 2.0임
+Exec=/opt/Antigravity-x64/antigravity --no-sandbox
+Icon=/opt/AntigravityIDE/resources/app/resources/linux/code.png
+Terminal=false
+Categories=Development;IDE;
+```
 
 ## GitHub Desktop 설치
 리눅스 계열은 Github Desktop을 지원을 안하기 때문에 ![해당 리포스터지](https://github.com/desktop-plus/desktop-plus)를 이용하면 된다
