@@ -189,7 +189,7 @@ Categories=Development;IDE;
 ```
 
 ## GitHub Desktop 설치
-리눅스 계열은 Github Desktop을 지원을 안하기 때문에 ![해당 리포스터지](https://github.com/desktop-plus/desktop-plus)를 이용하면 된다
+리눅스 계열은 Github Desktop을 지원을 안하기 때문에 [해당 리포스터지](https://github.com/desktop-plus/desktop-plus)를 이용하면 된다
 ```bash
 sudo curl https://gpg.desktop-plus.org/public.key | sudo gpg --dearmor -o /usr/share/keyrings/desktop-plus.gpg
 echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/desktop-plus.gpg] https://apt.desktop-plus.org/ stable main" | sudo tee /etc/apt/sources.list.d/desktop-plus.list
