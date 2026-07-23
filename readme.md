@@ -1,4 +1,4 @@
-# Xubuntu
+# Lubuntu
 
 ## 한글 폴더를 영어로 바꾸기
 
@@ -140,11 +140,21 @@ git clone https://github.com/an0jin/Linux.git
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
-## Discord 설치(비대면 과외할때 필요)
+## 아래아 한글 설치
+한글은 리눅스를 지원하지 않으니 [해당 리포스터지](https://github.com/golbin/hop)를 참고해서 프로그램을 다운받자
 
 ```bash
-sudo dpkg -i  discord-0.0.102.deb
+sudo dpkg -i HOP-linux-x64.deb
 ```
+
+
+
+## gemini cli설치
+
+```bash
+npm install -g @google/gemini-cli
+```
+
 
 ## Antigravity IDE를 실행프로그램으로 만들어 보자
 
@@ -188,6 +198,12 @@ Terminal=false
 Categories=Development;IDE;
 ```
 
+## Antigravity cli설치
+
+```bash
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+```
+
 ## GitHub Desktop 설치
 
 리눅스 계열은 Github Desktop을 지원을 안하기 때문에 [해당 리포스터지](https://github.com/desktop-plus/desktop-plus)를 이용하면 된다
@@ -198,6 +214,12 @@ echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/desktop-plus.gpg] http
 sudo apt update
 sudo apt install desktop-plus
 ```
+## Discord 설치(비대면 과외할때 필요)
+
+```bash
+sudo dpkg -i  discord-0.0.102.deb
+```
+
 
 # Oracle Linux(OCI)
 
