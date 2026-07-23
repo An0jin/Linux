@@ -103,6 +103,14 @@ gpg --list-secret-keys --keyid-format long
 pass init $your_gpg_id
 ```
 
+### Doker Desktop 설치
+#### 먼저 해야 하는거
+```bash
+sudo apt update
+sudo apt --fix-broken install
+```
+[다운로드](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.11.0-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64)
+
 ## Antigravity IDE를 실행프로그램으로 만들어 보자
 
 ```bash
