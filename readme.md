@@ -1,9 +1,24 @@
-# Lubuntu
+# Debian(Fcitx5, lxqt)
 
 ## 한글 폴더를 영어로 바꾸기
 
 ```bash
 LANG=C xdg-user-dirs-update --force
+```
+
+
+## ibus지우고 fcitx로 변경하기
+
+```bash
+sudo apt-get remove -purge ibus*
+sudo apt-get install fcitx5 fcitx5-hangul fcitx5-mozc
+```
+
+
+## 소리 조절 기능 넣기
+기본설정->단축키
+```bash
+pactl set-sink-volume @DEFAULT_SINK@ +5%
 ```
 
 ## CLI로 변경하기
