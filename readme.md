@@ -6,14 +6,12 @@
 LANG=C xdg-user-dirs-update --force
 ```
 
-
 ## ibus지우고 fcitx로 변경하기
 
 ```bash
 sudo apt-get remove -purge ibus*
 sudo apt-get install fcitx5 fcitx5-hangul fcitx5-mozc
 ```
-
 
 ## 소리 조절 기능 넣기
 기본설정->단축키
@@ -46,12 +44,6 @@ sudo apt-get install git-lfs
 
 ```bash
 sudo apt-get install vim
-```
-
-## 이모지 설치
-
-```bash
-sudo snap install emote
 ```
 
 ## NeoFetch 설치
