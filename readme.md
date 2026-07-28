@@ -98,6 +98,10 @@ echo "neofetch" >> ~/.bashrc
 
 ## GUI
 
+### 시간 맞추기
+```bash
+sudo date -s "$(curl -sI --insecure http://google.com | grep -i "^date:" | cut -d" " -f3-)"
+```
 
 ### fcitx로 변경하기
 
@@ -376,24 +380,6 @@ Categories=주 카테고리;부 카테고리;
       </tr>
     </tbody>
   </table>
-
-### Antigravity 2.0을 실행프로그램으로 만들어 보자
-
-```bash
-sudo tar -zxvf Antigravity.tar.gz -C /opt/
-sudo vim "/usr/share/applications/Antigravity.desktop"
-```
-
-#### 파일 내용작성
-
-```bash
-[Desktop Entry]
-Type=Application
-Name=Antigravity 2.0
-Exec=/opt/Antigravity-x64/antigravity --no-sandbox
-Icon=/opt/AntigravityIDE/resources/app/resources/linux/code.png
-Categories=Development;IDE;
-```
 
 ### CLI로 변경하기
 
