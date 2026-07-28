@@ -152,6 +152,7 @@ Icon=아이콘
 Categories=주 카테고리;부 카테고리;
 ```
 ##### 카테고리 설명
+
 <table>
     <thead>
       <tr>
@@ -183,7 +184,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Development</td>
         <td class="main-desc">소프트웨어 개발, 프로그래밍, 디버깅 관련 도구 카테고리</td>
@@ -200,7 +200,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Education</td>
         <td class="main-desc">학습, 교육, 훈련 목적의 소프트웨어 카테고리</td>
@@ -217,7 +216,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Game</td>
         <td class="main-desc">각종 오락 및 게임 애플리케이션 카테고리</td>
@@ -240,7 +238,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Graphics</td>
         <td class="main-desc">이미지 생성, 편집, 뷰어 관련 애플리케이션 카테고리</td>
@@ -258,7 +255,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Network</td>
         <td class="main-desc">인터넷 접속, 통신, 원격 제어 관련 프로그램 카테고리</td>
@@ -280,7 +276,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Office</td>
         <td class="main-desc">사무 처리, 문서 작성, 일정 관리 관련 카테고리</td>
@@ -303,7 +298,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Science</td>
         <td class="main-desc">수학, 과학, 공학 연구용 전문 프로그램 카테고리</td>
@@ -332,7 +326,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Settings</td>
         <td class="main-desc">데스크톱 환경 및 시스템 환경설정 관련 카테고리</td>
@@ -346,7 +339,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">System</td>
         <td class="main-desc">운영체제 관리, 시스템 모니터링, 파일 관리 카테고리</td>
@@ -361,7 +353,6 @@ Categories=주 카테고리;부 카테고리;
           </ul>
         </td>
       </tr>
-
       <tr>
         <td class="main-cat">Utility</td>
         <td class="main-desc">일반적인 보조 도구 및 액세서리 프로그램 카테고리</td>
