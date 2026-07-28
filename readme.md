@@ -1,4 +1,5 @@
 # Debian(Fcitx5, lxqt)
+이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다
 ## CLI
 
 ### sudo 설치
@@ -379,7 +380,8 @@ sudo systemctl set-default multi-user.target
 sudo reboot
 ```
 
-# Oracle Linux(OCI)
+# Oracle Linux
+이 리포스터지를 만든사람의 오라클 리눅스는 단순 OCI에서 받은 클라우드 VM으로 쓰기때문에 도커만 설치할 예정이다
 
 ## 해당 클라우드에 접속하기
 
