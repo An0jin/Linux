@@ -111,6 +111,18 @@ sudo apt-get install fcitx5 fcitx5-hangul
 pactl set-sink-volume @DEFAULT_SINK@ +5%
 ```
 
+### 밝기 증가 넣기
+기본설정->단축키
+```bash
+bash -c 'echo "비밀번호" | sudo -S bash -c "D=\$(ls /sys/class/backlight/ | head -n 1); M=\$(cat /sys/class/backlight/\$D/max_brightness); C=\$(cat /sys/class/backlight/\$D/brightness); S=\$((M/20)); N=\$((C+S)); [ \$N -gt \$M ] && N=\$M; echo \$N > /sys/class/backlight/\$D/brightness"'
+```
+
+### 밝기 감소 넣기
+기본설정->단축키
+```bash
+bash -c 'echo "비밀번호" | sudo -S bash -c "D=\$(ls /sys/class/backlight/ | head -n 1); M=\$(cat /sys/class/backlight/\$D/max_brightness); C=\$(cat /sys/class/backlight/\$D/brightness); S=\$((M/20)); N=\$((C-S)); [ \$N -lt 0 ] && N=0; echo \$N > /sys/class/backlight/\$D/brightness"'
+```
+
 ### 한글 및 이모티콘이 깨질때
 
 ```bash
