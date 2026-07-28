@@ -61,13 +61,10 @@ sudo apt install -y language-pack-ko fonts-nanum-* fontconfig
 sudo fc-cache -f -v
 ```
 
-## 파이썬 가상환경 없이도 라이브러리 설치할수 있게하기
-
-리눅스에서는 파이썬 라이브러리를 설치할때 가상환경을 설치해야 한다 계속 가상환경을 만들고 라이브러리를 설치하는건 귀찮으니 아래 명령어를 쳐서 해결해보자
+## 파이썬 pip 설치
 
 ```bash
 sudo apt-get install python3-pip
-python3 -m pip config set global.break-system-packages true
 ```
 
 ### 파이썬 가상환경 쓸수 있게 하기
@@ -82,6 +79,11 @@ sudo apt-get install python3-venv
 python3 -m venv myenv
 source myenv/bin/activate
 ```
+## 가상환경 안만들고 라이브러리 설치하는법
+```bash
+sudo apt install pipx
+pipx install 라이브러리
+```
 
 ## Java 설치
 
@@ -91,7 +93,7 @@ sudo apt install openjdk-21-jdk
 ## Docker 설치
 
 ```bash
-sudo wget -qO- http://get.docker.com/ | sh
+sudo apt install docker.io
 ```
 
 ### Docker 할때 sudo 없이 사용하기
