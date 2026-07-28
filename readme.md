@@ -400,18 +400,13 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ## Docker 설치
 
 ```bash
-sudo dnf update -y
-sudo dnf install -y dnf-utils
-sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+curl -fsSL https://get.docker.com | sudo sh
 ```
 
 ### Docker 할때 sudo 없이 사용하기
 
 ```bash
-sudo groupadd docker
 sudo usermod -aG docker $USER
-sudo service docker restart
 ```
 
 ## 용량부족 해결볍
