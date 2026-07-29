@@ -154,7 +154,7 @@ sudo apt install brightnessctl -y
 brightnessctl set 5%+
 ```
 
-### 밝기 감소 넣기
+#### 밝기 감소 넣기
 기본설정->단축키
 ```bash
 brightnessctl set 5%-
