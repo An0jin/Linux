@@ -1,4 +1,4 @@
-# Debian(Fcitx5, lxqt)
+# Debian
 이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다
 ## CLI
 
