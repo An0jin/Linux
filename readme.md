@@ -101,6 +101,7 @@ echo "neofetch" >> ~/.bashrc
 
 ### 시간 맞추기
 ```bash
+sudo apt update && sudo apt install -y chrony
 sudo timedatectl set-ntp true
 timedatectl status
 ```
