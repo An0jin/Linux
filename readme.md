@@ -98,9 +98,15 @@ echo "neofetch" >> ~/.bashrc
 
 ## GUI
 
+
 ### 시간 맞추기
 ```bash
 sudo date -s "$(curl -sI --insecure http://google.com | grep -i "^date:" | cut -d" " -f3-)"
+```
+
+### 와이파이 설치
+```bash
+sudo apt install rfkill firmware-linux firmware-realtek firmware-iwlwifi
 ```
 
 ### fcitx로 변경하기
