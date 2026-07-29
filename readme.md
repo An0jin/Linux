@@ -101,7 +101,8 @@ echo "neofetch" >> ~/.bashrc
 
 ### 시간 맞추기
 ```bash
-sudo date -s "$(curl -sI --insecure http://google.com | grep -i "^date:" | cut -d" " -f3-)"
+sudo timedatectl set-ntp true
+timedatectl status
 ```
 
 ### 와이파이 설치
