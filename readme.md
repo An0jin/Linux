@@ -56,8 +56,7 @@ source myenv/bin/activate
 ```
 ##### 가상환경 안만들고 라이브러리 설치하는법
 ```bash
-sudo apt install pipx
-pipx install 라이브러리
+python3 -m pip config set global.break-system-packages true
 ```
 
 ### Java 설치
