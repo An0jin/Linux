@@ -108,6 +108,7 @@ sudo date -s "$(curl -sI --insecure http://google.com | grep -i "^date:" | cut -
 ```bash
 sudo vim /etc/NetworkManager/NetworkManager.conf
 ```
+
 파일내용을 이렇게 바꾼다 그냥 managed을 true로 바꾸면 된다
 ```bash
 [main]
@@ -141,18 +142,22 @@ sudo apt-get install fcitx5 fcitx5-hangul
 기본설정->단축키
 ```bash
 pactl set-sink-volume @DEFAULT_SINK@ +5%
-```
 
-### 밝기 증가 넣기
+```
+### 밝기 조절 기능 설치하기
+```bash
+sudo apt install brightnessctl -y
+```
+#### 밝기 증가 넣기
 기본설정->단축키
 ```bash
-bash -c 'echo "비밀번호" | sudo -S bash -c "D=\$(ls /sys/class/backlight/ | head -n 1); M=\$(cat /sys/class/backlight/\$D/max_brightness); C=\$(cat /sys/class/backlight/\$D/brightness); S=\$((M/20)); N=\$((C+S)); [ \$N -gt \$M ] && N=\$M; echo \$N > /sys/class/backlight/\$D/brightness"'
+brightnessctl set 5%+
 ```
 
 ### 밝기 감소 넣기
 기본설정->단축키
 ```bash
-bash -c 'echo "비밀번호" | sudo -S bash -c "D=\$(ls /sys/class/backlight/ | head -n 1); M=\$(cat /sys/class/backlight/\$D/max_brightness); C=\$(cat /sys/class/backlight/\$D/brightness); S=\$((M/20)); N=\$((C-S)); [ \$N -lt 0 ] && N=0; echo \$N > /sys/class/backlight/\$D/brightness"'
+brightnessctl set 5%-
 ```
 
 ### 한글 및 이모티콘이 깨질때
