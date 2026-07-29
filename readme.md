@@ -106,7 +106,29 @@ sudo date -s "$(curl -sI --insecure http://google.com | grep -i "^date:" | cut -
 
 ### 와이파이 설치
 ```bash
-sudo apt install rfkill firmware-linux firmware-realtek firmware-iwlwifi
+sudo vim /etc/NetworkManager/NetworkManager.conf
+```
+파일내용을 이렇게 바꾼다 그냥 managed을 true로 바꾸면 된다
+```bash
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=true
+```
+```bash
+sudo vim /etc/network/interfaces
+```
+파일내용을 이렇게 바꾼다.
+```bash
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
 ```
 
 ### fcitx로 변경하기
