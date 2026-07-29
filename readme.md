@@ -162,6 +162,11 @@ sudo apt install -y fonts-nanum fonts-noto-cjk fonts-noto-color-emoji fonts-symb
 sudo fc-cache -f -v
 ```
 
+### 리브레 오피스 설치
+```bash
+sudo apt install --no-install-recommends libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-l10n-ko
+```
+
 ### tar.gz를 실행프로그램으로 만들어 보자
 
 ```bash
