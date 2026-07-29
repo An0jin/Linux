@@ -89,7 +89,7 @@ sudo systemctl set-default graphical.target
 sudo reboot
 ```
 
-### NeoFetch 설치
+### FastFetch 설치
 
 ```bash
 sudo apt install fastfetch
