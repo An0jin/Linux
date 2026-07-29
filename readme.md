@@ -92,8 +92,8 @@ sudo reboot
 ### NeoFetch 설치
 
 ```bash
-sudo apt-get install neofetch
-echo "neofetch" >> ~/.bashrc
+sudo apt install fastfetch
+echo "fastfetch" >> ~/.bashrc
 ```
 
 ## GUI
