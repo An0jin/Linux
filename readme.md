@@ -140,6 +140,12 @@ iface lo inet loopback
 sudo apt-get install fcitx5 fcitx5-hangul
 ```
 
+### deb 파일 설치하기
+```bash
+sudo dpkg -i 파일명.deb
+```
+
+
 ### 소리 조절 기능 넣기
 기본설정->단축키
 ```bash
