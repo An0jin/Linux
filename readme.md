@@ -1,193 +1,31 @@
-# Debian
-이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다
-## CLI
-
-### sudo 설치
-```bash
-apt install sudo 
-```
-
-#### sudo 권한 주기
-```bash
-su -
-usermod -aG sudo 유저명
-```
-
-### 한글 폴더를 영어로 바꾸기
+# 공동
+## 한글 폴더를 영어로 바꾸기
 ```bash
 LANG=C xdg-user-dirs-update --force
 ```
 
-### Git 설치
-```bash
-sudo apt-get install git
-sudo apt-get install git-lfs
-```
-
-### Vim 설치
-
-```bash
-sudo apt-get install vim
-```
-
-### 파이썬 설치
-
-```bash
-sudo apt-get install python3
-```
-
-#### 파이썬 pip 설치
-
-```bash
-sudo apt-get install python3-pip
-```
-
-##### 파이썬 가상환경 쓸수 있게 하기
-
-```bash
-sudo apt-get install python3-venv
-```
-
-##### 가상환경 실행
-
-```bash
-python3 -m venv myenv
-source myenv/bin/activate
-```
-##### 가상환경 안만들고 라이브러리 설치하는법
-```bash
-python3 -m pip config set global.break-system-packages true
-```
-
-### Java 설치
-
-```bash
-sudo apt install openjdk-21-jdk
-```
-
-### Docker 설치
-
-```bash
-sudo apt install docker.io
-```
-
-#### Docker 할때 sudo 없이 사용하기
-
-```bash
-su - 
-usermod -aG docker 유저명
-```
-
-### lxqt 설치
-```bash
-sudo apt-get install lxqt
-```
-### GUI로 변경하기
+## GUI로 변경하기
 
 ```bash
 sudo systemctl set-default graphical.target
 sudo reboot
 ```
 
-### FastFetch 설치
+### CLI로 변경하기
 
 ```bash
-sudo apt install fastfetch
-echo "fastfetch" >> ~/.bashrc
+sudo systemctl set-default multi-user.target
+sudo reboot
 ```
 
-## GUI
-
-
-### 시간 맞추기
-```bash
-sudo apt update && sudo apt install -y chrony
-sudo timedatectl set-ntp true
-timedatectl status
-```
-
-### 와이파이 설치
-```bash
-sudo vim /etc/NetworkManager/NetworkManager.conf
-```
-
-파일내용을 이렇게 바꾼다 그냥 managed을 true로 바꾸면 된다
-```bash
-[main]
-plugins=ifupdown,keyfile
-
-[ifupdown]
-managed=true
-```
-```bash
-sudo vim /etc/network/interfaces
-```
-파일내용을 이렇게 바꾼다.
-```bash
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-
-source /etc/network/interfaces.d/*
-
-auto lo
-iface lo inet loopback
-
-```
-
-### fcitx로 변경하기
-
-```bash
-sudo apt-get install fcitx5 fcitx5-hangul
-```
-
-### deb 파일 설치하기
-```bash
-sudo dpkg -i 파일명.deb
-```
-
-
-### 소리 조절 기능 넣기
-기본설정->단축키
-```bash
-pactl set-sink-volume @DEFAULT_SINK@ +5%
-
-```
-### 밝기 조절 기능 설치하기
-```bash
-sudo apt install brightnessctl -y
-```
-#### 밝기 증가 넣기
-기본설정->단축키
-```bash
-brightnessctl set 5%+
-```
-
-#### 밝기 감소 넣기
-기본설정->단축키
-```bash
-brightnessctl set 5%-
-```
-
-### 한글 및 이모티콘이 깨질때
-
-```bash
-sudo apt install -y fonts-nanum fonts-noto-cjk fonts-noto-color-emoji fonts-symbola
-sudo fc-cache -f -v
-```
-
-### 리브레 오피스 설치
-```bash
-sudo apt install --no-install-recommends libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-l10n-ko
-```
-
-### tar.gz를 실행프로그램으로 만들어 보자
+## tar.gz를 실행프로그램으로 만들어 보자
 
 ```bash
 sudo tar -zxvf 파일명 -C /opt/
 sudo vim "/usr/share/applications/짓고싶은 이름.desktop"
 ```
 
-#### 파일 내용작성
+### 파일 내용작성
 
 ```bash
 [Desktop Entry]
@@ -197,7 +35,7 @@ Exec="프로그램 위치"(필수)
 Icon=아이콘
 Categories=주 카테고리;부 카테고리;
 ```
-##### 카테고리 설명
+#### 카테고리 설명
 
 <table>
     <thead>
@@ -417,13 +255,178 @@ Categories=주 카테고리;부 카테고리;
       </tr>
     </tbody>
   </table>
+  
+# Debian
+이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다
+## CLI
 
-### CLI로 변경하기
+### sudo 설치
+```bash
+apt install sudo 
+```
+
+#### sudo 권한 주기
+```bash
+su -
+usermod -aG sudo 유저명
+```
+
+### Git 설치
+```bash
+sudo apt-get install git
+sudo apt-get install git-lfs
+```
+
+### Vim 설치
 
 ```bash
-sudo systemctl set-default multi-user.target
-sudo reboot
+sudo apt-get install vim
 ```
+
+### 파이썬 설치
+
+```bash
+sudo apt-get install python3
+```
+
+#### 파이썬 pip 설치
+
+```bash
+sudo apt-get install python3-pip
+```
+
+##### 파이썬 가상환경 쓸수 있게 하기
+
+```bash
+sudo apt-get install python3-venv
+```
+
+##### 가상환경 실행
+
+```bash
+python3 -m venv myenv
+source myenv/bin/activate
+```
+##### 가상환경 안만들고 라이브러리 설치하는법
+```bash
+python3 -m pip config set global.break-system-packages true
+```
+
+### Java 설치
+
+```bash
+sudo apt install openjdk-21-jdk
+```
+
+### Docker 설치
+
+```bash
+sudo apt install docker.io
+```
+
+#### Docker 할때 sudo 없이 사용하기
+
+```bash
+su - 
+usermod -aG docker 유저명
+```
+
+### lxqt 설치
+```bash
+sudo apt-get install lxqt
+```
+
+### FastFetch 설치
+
+```bash
+sudo apt install fastfetch
+echo "fastfetch" >> ~/.bashrc
+```
+
+## GUI
+
+
+### 시간 맞추기
+```bash
+sudo apt update && sudo apt install -y chrony
+sudo timedatectl set-ntp true
+timedatectl status
+```
+
+### 와이파이 설치
+```bash
+sudo vim /etc/NetworkManager/NetworkManager.conf
+```
+
+파일내용을 이렇게 바꾼다 그냥 managed을 true로 바꾸면 된다
+```bash
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=true
+```
+```bash
+sudo vim /etc/network/interfaces
+```
+파일내용을 이렇게 바꾼다.
+```bash
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+```
+
+### fcitx로 변경하기
+
+```bash
+sudo apt-get install fcitx5 fcitx5-hangul
+```
+
+### deb 파일 설치하기
+```bash
+sudo dpkg -i 파일명.deb
+```
+
+
+### 소리 조절 기능 넣기
+기본설정->단축키
+```bash
+pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+```
+### 밝기 조절 기능 설치하기
+```bash
+sudo apt install brightnessctl -y
+```
+#### 밝기 증가 넣기
+기본설정->단축키
+```bash
+brightnessctl set 5%+
+```
+
+#### 밝기 감소 넣기
+기본설정->단축키
+```bash
+brightnessctl set 5%-
+```
+
+### 한글 및 이모티콘이 깨질때
+
+```bash
+sudo apt install -y fonts-nanum fonts-noto-cjk fonts-noto-color-emoji fonts-symbola
+sudo fc-cache -f -v
+```
+
+### 리브레 오피스 설치
+```bash
+sudo apt install --no-install-recommends libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-l10n-ko
+```
+
 
 # Oracle Linux
 이 리포스터지를 만든사람의 오라클 리눅스는 단순 OCI에서 받은 클라우드 VM으로 쓰기때문에 도커만 설치할 예정이다
