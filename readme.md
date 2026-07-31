@@ -277,13 +277,10 @@ station wlan0 get-networks
 station wlan0 connect "네트워크 이름"
 ```
 
-### wifi 연결
+### 설치전에 해야할것
 ```bash
-iwctl
-device list
-station wlan0 scan
-station wlan0 get-networks
-station wlan0 connect "네트워크 이름"
+timedatectl set-ntp true
+pacman -Sy archlinux-keyring
 ```
 
 ### arch linux 설치
