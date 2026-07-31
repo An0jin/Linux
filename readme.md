@@ -261,8 +261,11 @@ Categories=주 카테고리;부 카테고리;
     </tbody>
   </table>
 # Arch Linux
+
 ## 다운로드
+
 [다운로드](https://archive.archlinux.org/iso/)
+
 ## CLI
 
 ### wifi 연결
