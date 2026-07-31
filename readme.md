@@ -1,4 +1,9 @@
+이 리포스터지는 리눅스 공부용으로 만든 리포스터지로 리눅스가 처음인 사람에게 쓸만한 리포스터지입니다.
 # 공동
+
+## 리눅스 부팅 USB만들기
+[다운로드](https://www.ventoy.net/en/download.html)
+
 ## 한글 폴더를 영어로 바꾸기
 ```bash
 LANG=C xdg-user-dirs-update --force
@@ -255,9 +260,38 @@ Categories=주 카테고리;부 카테고리;
       </tr>
     </tbody>
   </table>
-  
+# Arch Linux
+## 다운로드
+[다운로드](https://archive.archlinux.org/iso/)
+## CLI
+
+### wifi 연결
+```bash
+iwctl
+device list
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect "네트워크 이름"
+```
+
+### wifi 연결
+```bash
+iwctl
+device list
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect "네트워크 이름"
+```
+
+### arch linux 설치
+```
+archlinstall
+```
+
 # Debian
-이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다
+이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다(우분투 쓰는 사람들도 참고하면 좋다)
+## 다운로드
+[다운로드](https://www.debian.org/download)
 ## CLI
 
 ### sudo 설치
