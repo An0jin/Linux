@@ -418,7 +418,8 @@ brightnessctl set 5%-
 ### 한글 및 이모티콘이 깨질때
 
 ```bash
-sudo apt install -y fonts-nanum fonts-noto-cjk fonts-noto-color-emoji fonts-symbola
+sudo apt update
+sudo apt install -y fonts-noto-core fonts-noto-extra fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-color-emoji fonts-symbola
 sudo fc-cache -f -v
 ```
 
