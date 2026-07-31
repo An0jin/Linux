@@ -419,7 +419,7 @@ brightnessctl set 5%-
 
 ```bash
 sudo apt update
-sudo apt install -y fonts-noto-core fonts-noto-extra fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-color-emoji fonts-symbola
+sudo apt install -y fonts-nanum fonts-noto-cjk fonts-noto-core fonts-noto-extra fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-color-emoji fonts-symbola
 sudo fc-cache -f -v
 ```
 
