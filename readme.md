@@ -25,6 +25,13 @@ sudo tar -zxvf 파일명 -C /opt/
 sudo vim "/usr/share/applications/짓고싶은 이름.desktop"
 ```
 
+## AppImage를 실행프로그램으로 만들어 보자
+
+```bash
+sudo mv 파일명 /opt/
+sudo vim "/usr/share/applications/짓고싶은 이름.desktop"
+```
+
 ### 파일 내용작성
 
 ```bash
@@ -255,7 +262,15 @@ Categories=주 카테고리;부 카테고리;
       </tr>
     </tbody>
   </table>
-  
+
+
+### APPImage앱이 실행이 안될경우
+
+```bash
+sudo apt update
+sudo apt install libfuse2
+```  
+
 # Debian
 이 리포스터지를 만든 사람은 snap 때문에 ubuntu계열을 싫어하며 denain을 처음부터 GUI로 해버리면 ibus가 설치되기 때문에 Debian은 CLI로 어느정도 다루고 lxqt를 설치한 후 fcitx5를 설치할 예정이다
 ## CLI
