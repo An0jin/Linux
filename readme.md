@@ -937,7 +937,7 @@ curl -fsSL https://get.docker.com | sudo sh
 ### Docker 할때 sudo 없이 사용하기
 
 ```bash
-sudo usermod -aG docker $USER
+sudo usermod -aG docker opc
 ```
 
 ## 용량부족 해결볍
