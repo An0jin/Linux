@@ -4,6 +4,14 @@
 LANG=C xdg-user-dirs-update --force
 ```
 
+## 도커설치
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+```
+
 ## GUI로 변경하기
 
 ```bash
